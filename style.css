@@ -47,6 +47,11 @@ background: var(--color-white);
 .image-svg {
 border-radius: 10px;
 fill: var(--color-yellow);
+display: block;
+max-width: 100%;
+height: auto;
+
+
 }
 
 
