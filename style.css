@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, img, p, a {
+    margin: 0;
+}
+
+:root {
+	--color-gray-950: #111;
+	--color-white: #fff;
+	--color-yellow: #f4d04e;
+	--color-gray-500: #6b6b6b;
+}
+:root {
+  --font-family: "Figtree", sans-serif;
+  --second-family: "Barlow", sans-serif;
+}
+
+.container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+column-gap: 24px;
+height: 100vh;
+background: var(--color-yellow);
+}
+
+.card-wrapper {
+border: 1px solid var(--color-gray-950);
+border-radius: 20px;
+padding: 24px;
+width: 327px;
+height: 501px;
+background-color: var(--color-white);
+box-shadow: 8px 8px 0 0 #000;
+background: var(--color-white);
+}
+
+.svg-wrapper {
+    margin-bottom: 24px;
+}
+
+.image-svg {
+border-radius: 10px;
+fill: var(--color-yellow);
+}
+
+
+
+.title-learning {
+border-radius: 4px;
+padding: 4px 12px;
+width: 73px;
+background: var(--color-yellow);
+height: 26px;
+font-family: var(--font-family);
+font-weight: 800;
+font-size: 12px;
+line-height: 150%;
+color: var(--color-gray-950);
+margin-bottom: 12px;
+}
+
+.text-info {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 12px;
+line-height: 150%;
+color: var(--color-gray-950);
+margin-bottom: 12px;
+}
+
+.link {
+font-family: var(--font-family);
+font-weight: 800;
+font-size: 20px;
+line-height: 150%;
+color: var(--color-gray-950);
+margin-bottom: 12px;
+text-decoration: none;
+}
+
+.text-2 {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--color-gray-500);
+margin-bottom: 24px;
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.name {
+font-family: var(--font-family);
+font-weight: 800;
+font-size: 14px;
+line-height: 150%;
+color: var(--color-gray-950);
+}
+
+@media screen and (min-width: 768px) {
+    .link:hover {
+        color: var(--color-yellow);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card-wrapper {
+    width: 384px;
+    height: 522px;
+    }
+
+    .image-svg {
+        width: 336px;
+        height: 200px;
+    }
+
+    .title-learning {
+    width: 82px;
+    height: 29px;
+    font-size: 14px;
+    }
+
+    .text-info {
+    font-size: 14px;
+    }
+
+    .link {
+    font-size: 24px;
+    cursor: pointer;
+    }
+
+
+    .link:hover {
+        color: var(--color-yellow) !important
+        
+    }
+
+    .text-2 {
+        font-size: 16px;
+    }
+    
+    .name {
+        font-size: 14px;
+    }
+
+
+}
